@@ -9,19 +9,50 @@
     <body>
         <header></header>
         <nav>
+           
             <!-- ToDo: An unordered list to represent the menu, 
                        each list item should correspond to the menu items (Home, Register, Login, Help)
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <li> <a href = '#'> Home </a></li>
+                <li> <a href = '#'> Register </a></li>
+                <li> <a href = '#'> Login </a></li>
+                <li> <a href = '#'> Help </a></li>
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
+                <form>
+                    <label for="search"></label>
+                     <input type="text" id="search" name = "search" placeholder="Search">
+
+                </form>
             </aside>
             <section>
                 <form class="center" novalidate>
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name = "name"><br>
+                     <p></p>
+                     <label for="email"> Email:</label>
+                     <input type="text" id="email" name = "email"><br>
+                     <p></p>
+                     <label for="password"> Password</label>
+                     <input type="text" id="password" name = "password"><br>
+                     <p></p>
+                     <label for="retypepassword"> Re-type password</label>
+                     <input type="text" id="retypepassword" name = "retypepassword"><br>
+                     <p></p>
+                     <label for="Terms of service"> Terms of Service:</label>
+                     <input type="checkbox" id="Terms of service" name = "Terms of service"><br>
+                     <p></p>
+                     
+
+
+                    
+                    
+
                 <!-- ToDo: Implement the form containing 
                            Name - type text
                            email- type text
@@ -36,10 +67,19 @@
                     
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
+                    
                     <input type="checkbox" id="seller" name="seller" value="seller">
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
 
-                    <br><br>
+                    <input type="checkbox" id="agree" name="agree" value="agree">
+                    <label for="agree">I agree to the <a href = ''> Terms of use </a> and <a href = ''> Privacy policy </a> . </label><br><br>
+                    
+
+
+                    <p></p>
+                     <label for="register-btn"></label>
+                     <input type="button" id="register-btn" name="register" value="Register"> <a href = ''> Learn more </a> 
+                    
                 </form>
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
