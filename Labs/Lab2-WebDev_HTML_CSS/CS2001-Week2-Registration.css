@@ -69,7 +69,7 @@ section, aside {
 aside {
     /*ToDo: Set width.ToDo: For fluid layouts, use min-width, max-width, and set to relative 
    values, like 25% of the page.*/ 
-    background-color: #b9b9b1;
+    background-color: #dedede;
     width: 25%;
     
    

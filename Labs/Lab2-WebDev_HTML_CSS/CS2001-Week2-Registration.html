@@ -15,38 +15,37 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
-                <li> <a href = '#'> Home </a></li>
-                <li> <a href = '#'> Register </a></li>
-                <li> <a href = '#'> Login </a></li>
-                <li> <a href = '#'> Help </a></li>
+                <li> <a href = "/Home"> Home </a></li>
+                <li> <a href = "/Register"> Register </a></li>
+                <li> <a href = "/Login"> Login </a></li>
+                <li> <a href = "/Help"> Help </a></li>
             </ul>
          </nav>
         <main>
             <!-- Check Week 2 Lecture to learn about HTML5 semantic elements-->
             <aside>
                 <form>
-                    <label for="search"></label>
                      <input type="text" id="search" name = "search" placeholder="Search">
 
                 </form>
             </aside>
             <section>
                 <form class="center" novalidate>
-                     <label for="name">Name:</label>
-                     <input type="text" id="name" name = "name"><br>
-                     <p></p>
-                     <label for="email"> Email:</label>
-                     <input type="text" id="email" name = "email"><br>
-                     <p></p>
-                     <label for="password"> Password</label>
-                     <input type="text" id="password" name = "password"><br>
-                     <p></p>
-                     <label for="retypepassword"> Re-type password</label>
-                     <input type="text" id="retypepassword" name = "retypepassword"><br>
-                     <p></p>
+                     <label class = "textInput" for="name"> Name:</label>
+                     <input type="text" id="name" name = "name" required maxlength="50"><br><br>
+                     
+                     <label  class = "textInput" for="email"> Email:</label>
+                     <input type="email" id="email" name = "email" required><br><br>
+                     
+                     <label  class = "textInput" for="password"> Password</label>
+                     <input type="password" id="password" name = "password" required minlength="8"><br><br>
+                     
+                     <label class = "textInput" for="retypepassword"> Re-type password</label>
+                     <input type="password" id="retypepassword" name = "retypepassword" required minlength="8"><br><br>
+                    
                      <label for="Terms of service"> Terms of Service:</label>
-                     <input type="checkbox" id="Terms of service" name = "Terms of service"><br>
-                     <p></p>
+                     <input type="checkbox" id="Terms of service" name = "Terms of service"><br><br>
+                     
                      
 
 
@@ -72,14 +71,11 @@
                     <label for="seller">I want to sell produce from my allotment.</label><br><br>
 
                     <input type="checkbox" id="agree" name="agree" value="agree">
-                    <label for="agree">I agree to the <a href = ''> Terms of use </a> and <a href = ''> Privacy policy </a> . </label><br><br>
-                    
-
-
-                    <p></p>
-                     <label for="register-btn"></label>
-                     <input type="button" id="register-btn" name="register" value="Register"> <a href = ''> Learn more </a> 
-                    
+                    <label for="agree">I agree to the <a href = ""> Terms of use </a> and <a href = " "> Privacy policy </a> . </label>
+                    <br><br>
+                    <input type="button" id="register-btn" value="Register" onclick="submitForm()"> 
+                    <a href = ""> Learn more </a> 
+                  
                 </form>
                 <div class="center" id="hiddenSection">
                     <p id="hiddenParagraph"></p>
