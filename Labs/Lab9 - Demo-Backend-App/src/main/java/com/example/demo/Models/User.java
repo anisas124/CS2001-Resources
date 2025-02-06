@@ -36,7 +36,7 @@ public class User implements Serializable {
 	String name;
 	
 	@NotBlank
-	@Column(unique=true)
+	@Column(unique=true) //  Ensures email is unique 
 	String email;
 	
 	@NotBlank
@@ -69,7 +69,8 @@ public class User implements Serializable {
 		this.email = email;
 		this.password = password;
 		this.userType = userType;
-	}
+	} // constructor to create new User objects easily
+	
 	
 	
 	public Long getId() {

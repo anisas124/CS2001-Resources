@@ -19,7 +19,7 @@ import com.example.demo.Models.User;
 import com.example.demo.Models.UserType;
 
 @RestController
-
+// would be able to car
 public class UserController {
     @Autowired
 	UserService userService;
